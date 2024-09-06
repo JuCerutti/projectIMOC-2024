@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
         
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/IMOC_CERUTTI/IMOC_style.css">
-        <link rel="icon" href="/IMOC_CERUTTI/IMOC Icons/IMOC-Icons.png">
-        <title>It's Mountain o'clock!</title>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../IMOC Icons/IMOC-Icons.png">
+    
+    <!---LIBRERIA BTS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!---LIBRERIA AWESOME-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Descarga mi estilo al final, SIEMPRE va como último llamado, es el que más peso lleva (es en cascada) -->
+    <link rel="stylesheet" href="../IMOC_style.css">
+    <title>It's Mountain o'clock!</title>
+    
+</head>
 
 
     <body>
         <header id="header">
-        <nav id="navBar">
-            <div class="iconInicio">
-                <a href="#"><img src="/IMOC_CERUTTI/IMOC Icons/IMOC-Icons.png" alt="iconInicio"></a>
-            </div>
-            
-
-            <ul class="navBar-links">
-                <li><img class="searchIcon" src="/IMOC_CERUTTI/IMOC-Images/search.png" alt="searchIcon"></a></li>
-                <li><a href="/IMOC_CERUTTI/IMOC-Pages/search-your-M.html">Search</a></li>
-                <li><img class="plusIcon" src="/IMOC_CERUTTI/IMOC-Images/plusIcon.png" alt="plusIcon"></a></li>
-                <li><a href="/IMOC_CERUTTI/IMOC-Pages/publish-your-M.html">Publish one activity</a></li>
-                <!--Pendiente Agregar boton llamado cuenta-->
-                <li><img src="/IMOC_CERUTTI/IMOC-Images/accountIcon.png" alt="accountIcon"></li>
-            </ul>
-        </nav>
+            <nav id="navBar">
+                <div class="iconInicio">
+                    <a href="../index.html"><img src="../IMOC Icons/IMOC-Icons.png" alt="iconInicio"></a>
+                </div>
+                    
+        
+                <ul class="navBar-links">
+                    <li><img class="searchIcon" src="../IMOC-Images/search.png" alt="searchIcon"></a></li>
+                    <li><a href="../IMOC-Pages/search-your-M.html">Search</a></li>
+                    <li><img class="plusIcon" src="../IMOC-Images/plusIcon.png" alt="plusIcon"></a></li>
+                    <li><a href="../IMOC-Pages/publish-your-M.html">Publish one activity</a></li>
+                    <!--Pendiente Agregar boton llamado cuenta-->
+                    <li><img src="../IMOC-Images/accountIcon.png" alt="accountIcon"></li>
+                </ul>
+                    
+        
+            </nav>
         </header>
+
         <main id="main">
             <div class="imocTitle">
                 <h1>Contact us</h1>
             </div>
             <div class="bannerM">        
-                <img class="bannerM" src="/IMOC_CERUTTI/IMOC-Images/IMOC-Banner.png" alt="bannerPublish">
+                <img class="bannerM" src="../IMOC-Images/IMOC-Banner.png" alt="bannerPublish">
             </div>   
+
+            <section class="actCityLink">
+
+                <div class="actMalaga">
+                    <h4>Book Activities in Malaga</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, molestias recusandae delectus a quaerat ipsam itaque alias modi officiis. Culpa!</p>
+                </div>
+                <div class="actMadrid">
+                    <h4>Book Activities in Madrid</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, molestias recusandae delectus a quaerat ipsam itaque alias modi officiis. Culpa!</p>    
+                </div>
+                <div class="actSevilla">
+                    <h4>Book Activities in Seville</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, molestias recusandae delectus a quaerat ipsam itaque alias modi officiis. Culpa!</p>    
+                </div>
+            </section>
         </main>
 
         <footer id="footer">
             
             <div class="footerDir">
-                <ul>
-                    <li>Contact us</li>
-                    <!---Falta agregar MAPA-->
-                </ul> 
+                <a href="../IMOC-Pages/contact-us.html">Contact us</a>
             </div>
             
             <div class="footerLegal">
@@ -71,9 +93,9 @@
             
 
             <div class="footerSocial">
-                <a href=""></a><i class="fa-brands fa-facebook-f"></i>
-                <a href=""></a><i class="fa-brands fa-youtube"></i>
-                <a href=""></a><i class="fa-brands fa-instagram"></i>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             </div> 
 
         </footer>

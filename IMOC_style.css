@@ -47,7 +47,7 @@ img{
 .bannerM img {
     width: 100%;
     height: 150px;
-
+    
     
 }
 
@@ -62,9 +62,39 @@ img{
     margin-top: 30px;
     
 }
+/*INDEX --------------------------------------------------*/
+
+#mainIndex {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+}
+
+.mainbannerM img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+}
+
+.mainImocTitle {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    width: 100%;
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+    
+}
 
 
-/* PUBLISH ACTIVITY*/
+.mainSearch {
+    display: flex;
+    padding: 300px 50px;
+}
+
+/* PUBLISH ACTIVITY---------------------------------------*/
 .infoNeed {
     text-align: center;
 }
@@ -113,8 +143,8 @@ ul, li {
 
 
 
-/*Page Search your Activity*/
-#imagenes {
+/*Page Search your Activity---------------------------------------*/
+#actPublished {
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%; /*busca el relativo mas cercano, al main */
@@ -146,49 +176,80 @@ ul, li {
     width: 100%;
     height: 100%;   
 } */
-#imagenes img {
+#actPublished img {
     width: 100%;
     height: 100%;
     transition: 0.5s;
 }
-
-#imagenes img:hover {
+#actPublished .img1:hover {
     border: 5px solid;
-    border-color: rgb(170, 167, 167);
+    border-color: rgb(247, 187, 255);
+    opacity: 1; 
 }
 
-#immagenes .img1 {
+#actPublished img:hover {
+    transition: opacity 0.5s ease; /* Añade una transición suave */
+    opacity: 0.5; 
+}
+
+#actPublished .img1 {
     grid-area: act1;
 }
 
-#immagenes .img2 {
+#actPublished .img2 {
     grid-area: act2;
     
 }
-#immagenes .img3 {
+#actPublished .img3 {
     grid-area: act3;    
 }
 
-#immagenes .img4 {
+#actPublished .img4 {
     grid-area: act4;    
 }
 
-#immagenes .img5 {
+#actPublished .img5 {
     grid-area: act5;
 }
 
-#immagenes .img6 {
+#actPublished .img6 {
     grid-area: act6;    
 }
 
-.texto-act1 {
-    
-    text-align: center;
+
+
+/*Join Activity------------------------------------------------------------------------------------------*/
+
+.card {
+    margin: 20px 5px 20px 5px;
+    padding: 30px 10px 30px 10px;
+}
+
+.col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    align-self: center;
+}
+
+.pagination {
+    display: flex ;
     justify-content: center;
 }
 
 
+/* Contact Us */
+.actCityLink {
+    display: flex;
+    padding: 100px 20px;
+}
 
+.actCityLink div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
 
 /* Estilos FOOTER */
 #footer {
@@ -198,34 +259,55 @@ ul, li {
     background-color: white;
     padding: 20px 50px;
     margin-top: auto;
-    
-    
+       
+}
+
+#footer ul{
+    padding-left: 0px;
+  
 }
 
 
 .footerDir a{
     color: black;
 }
+
+.footerDir:hover a{
+    color: grey;
+}
+
+
 .footerLegal ul{
     display: flex;
     flex-direction: column;
 }
 
-.footerLegal a{
+.footerLegal {
     color: black;
 }
 
-.footerLegal ul li:nth-child(3) a{
+.footerLegal ul li:nth-child(3) {
     color: rgb(74, 1, 178);
 }
 
-.footerActivities a{
+.footerLegal ul li:nth-child(3):hover {
+    color: rgb(193, 68, 193);
+}
+
+.footerLegal li:hover{
+    color: gray;
+}
+
+.footerActivities {
     color: black;
 }
 
 .footerActivities ul{
     display: flex;
     flex-direction: column;
+}
+.footerActivities li:hover {
+    color: gray;
 }
 
 .footerSocial a{
@@ -236,9 +318,6 @@ ul, li {
     font-size: 30px;
 }
 
-.footerSocial ul {
-    dis
-}
 
 .footerSocial .fa-brands:hover {
     color: grey;
@@ -254,9 +333,9 @@ Respetar de menor a mayor las medidas o al reves*/
     
 
 @media screen and (max-width: 1024px){
-    #imagenes {
+    #actPublished {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-template-areas: 
                 /*Col1 */
         /*Fila 1*/"act1" 
@@ -272,6 +351,12 @@ Respetar de menor a mayor las medidas o al reves*/
 
 @media screen and (max-width: 480px) {
     
+    .actCityLink {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 20px;
+    }
+
     .pubAct1 {
         flex-direction: column;
     }
