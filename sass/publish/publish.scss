@@ -1,0 +1,50 @@
+/* PUBLISH ACTIVITY---------------------------------------*/
+.infoNeed {
+    text-align: center;
+}
+
+.pubAct1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.actImage1 { 
+    img {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+}
+
+.formAct1 {
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.formPubAct1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    
+    &.submit:hover {
+        width: auto;
+        color: white;
+        background-color: black;
+    }
+}
+
+
+ul, li {
+    display: inline-block;
+    align-items: center;
+}
+
+
+
+
+

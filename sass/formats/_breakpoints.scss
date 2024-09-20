@@ -1,0 +1,43 @@
+/*Media va siempre al final 
+Respetar de menor a mayor las medidas o al reves*/
+
+
+    
+
+@media screen and (max-width: 1024px){
+    #actPublished {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+                /*Col1 */
+        /*Fila 1*/"act1" 
+        /*Fila 2*/"act2" 
+        /*Fila 3*/"act3" 
+        /*Fila 4*/"act4" 
+        /*Fila 5*/"act5" 
+        /*Fila 6*/"act6" 
+        ;
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .actCityLink {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 20px;
+    }
+
+    .pubAct1 {
+        flex-direction: column;
+    }
+    
+    #footer {
+        flex-direction: column;
+        text-align: center;
+       
+        div {
+        margin-top: 10px;
+        }
+    }

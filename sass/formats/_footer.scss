@@ -1,0 +1,75 @@
+/* Estilos FOOTER */
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: white;
+    padding: 20px 50px;
+    margin-top: auto;
+       
+    ul{
+    padding-left: 0px;
+    }
+}
+
+
+
+.footerDir a{
+    color: black;
+    
+    &:hover a{
+        color: grey;
+    }
+}
+
+
+
+
+.footerLegal {
+    color: black;
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        
+        li{
+            &:nth-child(3) {
+            color: rgb(74, 1, 178);
+            
+                &:hover {
+                color: rgb(193, 68, 193);
+                }
+            }
+            &:hover{
+            color: gray;
+            }
+        }
+    }            
+        
+}
+
+
+.footerActivities {
+    color: black;
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    li:hover {
+        color: gray;
+    }
+}
+
+
+.footerSocial {
+    font-size: 30px;
+    
+    a {
+        color: black;
+    }
+
+    .fa-brands:hover {
+        color: grey;
+    }
+
+}
