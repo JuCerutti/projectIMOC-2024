@@ -1,51 +1,31 @@
-@charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; /*diferencia con content-box?*/
-  font-style: none;
-  text-decoration: none;
-  font-family: "Oswald", sans-serif;
+#navBar {
+  max-width: 1920;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-img {
-  width: 30px;
-  height: 30px;
+.navBar-links {
+  display: flex;
 }
 
-/*Media va siempre al final 
-Respetar de menor a mayor las medidas o al reves*/
-@media screen and (max-width: 1024px) {
-  #actPublished {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "act1" "act2" "act3" "act4" "act5" "act6";
-    column-gap: 20px;
-  }
+.iconInicio img {
+  width: 100px;
+  height: 100px;
 }
-@media screen and (max-width: 480px) {
-  .actCityLink {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 20px;
-  }
-  .pubAct1 {
-    flex-direction: column;
-  }
-  #footer {
-    flex-direction: column;
-    text-align: center;
-  }
-  #footer div {
-    margin-top: 10px;
-  }
-}
+
 #main {
   display: flex;
   max-width: 1920px;
   height: auto;
-  background-color: rgba(205, 241, 252, 0.27);
   flex-direction: column;
+  padding-bottom: 20px;
+}
+
+body {
+  padding-bottom: 100px; /* Espacio para el footer */
 }
 
 /* Estilos FOOTER */
@@ -57,7 +37,6 @@ Respetar de menor a mayor las medidas o al reves*/
   padding: 20px 50px;
   margin-top: auto;
 }
-
 #footer ul {
   padding-left: 0px;
 }
@@ -65,55 +44,105 @@ Respetar de menor a mayor las medidas o al reves*/
 .footerDir a {
   color: black;
 }
-
-.footerDir:hover a {
+.footerDir a:hover a {
   color: grey;
-}
-
-.footerLegal ul {
-  display: flex;
-  flex-direction: column;
 }
 
 .footerLegal {
   color: black;
 }
-
+.footerLegal ul {
+  display: flex;
+  flex-direction: column;
+}
 .footerLegal ul li:nth-child(3) {
   color: rgb(74, 1, 178);
 }
-
 .footerLegal ul li:nth-child(3):hover {
   color: rgb(193, 68, 193);
 }
-
-.footerLegal li:hover {
+.footerLegal ul li:hover {
   color: gray;
 }
 
 .footerActivities {
   color: black;
 }
-
 .footerActivities ul {
   display: flex;
   flex-direction: column;
 }
-
 .footerActivities li:hover {
   color: gray;
-}
-
-.footerSocial a {
-  color: black;
 }
 
 .footerSocial {
   font-size: 30px;
 }
-
+.footerSocial a {
+  color: black;
+}
 .footerSocial .fa-brands:hover {
   color: grey;
+}
+
+/*INDEX SASS--------------------------------------------------*/
+.bannerM img {
+  width: 100%;
+  height: 150px;
+}
+
+.imocTitle {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#mainIndex {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainbannerM img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+}
+
+.mainImocTitle {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.mainSearch {
+  display: flex;
+  padding: 300px 50px 120px 50px;
+}
+
+.info-index {
+  display: flex;
+  padding: 100px 20px;
+}
+.info-index div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+.info-index img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Contact Us */
@@ -121,7 +150,6 @@ Respetar de menor a mayor las medidas o al reves*/
   display: flex;
   padding: 100px 20px;
 }
-
 .actCityLink div {
   display: flex;
   flex-direction: column;
@@ -178,133 +206,67 @@ Respetar de menor a mayor las medidas o al reves*/
   width: 100%;
   justify-content: center;
 }
+.formPubAct1.submit:hover {
+  width: auto;
+  color: white;
+  background-color: black;
+}
 
 ul, li {
   display: inline-block;
   align-items: center;
 }
 
-.formPubAct1 .submit:hover {
-  width: auto;
-  color: white;
-  background-color: black;
-}
-
 /*Page Search your Activity---------------------------------------*/
 #actPublished {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 100%; /*busca el relativo mas cercano, al main */
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "act1 act2 act3" "act4 act5 act6";
-  row-gap: 20px;
-  column-gap: 20px;
+  padding-bottom: 20px;
 }
 
-#actPublished img {
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*diferencia con content-box?*/
+  font-style: none;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
 }
 
-#actPublished .img1:hover {
-  border: 5px solid;
-  border-color: rgb(247, 187, 255);
-  opacity: 1;
+img {
+  width: 30px;
+  height: 30px;
 }
 
-#actPublished img:hover {
-  transition: opacity 0.5s ease; /* Añade una transición suave */
-  opacity: 0.5;
+/*Media va siempre al final 
+Respetar de menor a mayor las medidas o al reves*/
+@media screen and (max-width: 480px) {
+  #actPublished {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "act1" "act2" "act3" "act4" "act5" "act6";
+    column-gap: 20px;
+  }
 }
-
-#actPublished .img1 {
-  grid-area: act1;
-}
-
-#actPublished .img2 {
-  grid-area: act2;
-}
-
-#actPublished .img3 {
-  grid-area: act3;
-}
-
-#actPublished .img4 {
-  grid-area: act4;
-}
-
-#actPublished .img5 {
-  grid-area: act5;
-}
-
-#actPublished .img6 {
-  grid-area: act6;
-}
-
-/*INDEX --------------------------------------------------*/
-#mainIndex {
-  display: flex;
-  height: 500px;
-  flex-direction: column;
-}
-
-.mainbannerM img {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 500px;
-}
-
-.mainImocTitle {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  color: black;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.mainSearch {
-  display: flex;
-  padding: 300px 50px;
-}
-
-#navBar {
-  max-width: 1920;
-  height: 70px;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navBar-links {
-  display: flex;
-}
-
-.iconInicio img {
-  width: 100px;
-  height: 100px;
-}
-
-.bannerM img {
-  width: 100%;
-  height: 150px;
-}
-
-.imocTitle {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 100%;
-  color: white;
-  text-align: center;
-  margin-top: 30px;
+@media screen and (max-width: 480px) {
+  .actCityLink {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px;
+  }
+  .info-index {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px;
+  }
+  .pubAct1 {
+    flex-direction: column;
+  }
+  #footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  #footer div {
+    margin-top: 10px;
+  }
 }
 
 /*# sourceMappingURL=IMOC_style.css.map */

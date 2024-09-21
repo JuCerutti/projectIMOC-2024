@@ -4,7 +4,7 @@ Respetar de menor a mayor las medidas o al reves*/
 
     
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 480px){
     #actPublished {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
@@ -15,8 +15,7 @@ Respetar de menor a mayor las medidas o al reves*/
         /*Fila 3*/"act3" 
         /*Fila 4*/"act4" 
         /*Fila 5*/"act5" 
-        /*Fila 6*/"act6" 
-        ;
+        /*Fila 6*/"act6";
         column-gap: 20px;
     }
 }
@@ -29,10 +28,18 @@ Respetar de menor a mayor las medidas o al reves*/
         padding: 100px 20px;
     }
 
+    .info-index {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 20px;
+    }
+
     .pubAct1 {
         flex-direction: column;
     }
     
+    
+
     #footer {
         flex-direction: column;
         text-align: center;
@@ -41,3 +48,5 @@ Respetar de menor a mayor las medidas o al reves*/
         margin-top: 10px;
         }
     }
+
+}    

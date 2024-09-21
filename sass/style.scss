@@ -1,13 +1,13 @@
 
-//ESTILOS RESET Y QUERIES
 
-@import "formats/reset";
-@import "formats/breakpoints";
 
 //ESTILOS HTML
 @import "formats/header";
 @import "formats/body-main";
 @import "formats/footer";
+
+//PAGE INDEX 
+@import "index/index.scss";
 
 //PAGE CONTACT US
 @import "contact/contact";
@@ -21,48 +21,12 @@
 //PAGE SEARCH 
 @import "search/search.scss";
 
-//PAGE INDEX 
-@import "index/index.scss";
-
-
-#navBar {
-    max-width: 1920;
-    height: 70px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.navBar-links {
-    display: flex;
-}
-
-
-
-.iconInicio img {
-    width: 100px;
-    height: 100px;
-}
+//ESTILOS RESET Y QUERIES
+@import "formats/reset";
+@import "formats/breakpoints";
 
 
 
 
-.bannerM img {
-    width: 100%;
-    height: 150px;
-    
-    
-}
 
 
-.imocTitle {
-    display: flex;
-    flex-direction: column;
-    position:absolute;
-    width: 100%;
-    color: white;
-    text-align: center;
-    margin-top: 30px;
-    
-}

@@ -1,0 +1,19 @@
+#navBar {
+    max-width: 1920;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navBar-links {
+    display: flex;
+}
+
+
+
+.iconInicio img {
+    width: 100px;
+    height: 100px;
+}
