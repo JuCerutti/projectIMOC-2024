@@ -1,24 +1,10 @@
-/*Media va siempre al final 
-Respetar de menor a mayor las medidas o al reves*/
-
 
     
+/* Estilos para pantallas pequeñas (480px o menos) */
 
-@media screen and (max-width: 480px){
-    #actPublished {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
-                /*Col1 */
-        /*Fila 1*/"act1" 
-        /*Fila 2*/"act2" 
-        /*Fila 3*/"act3" 
-        /*Fila 4*/"act4" 
-        /*Fila 5*/"act5" 
-        /*Fila 6*/"act6";
-        column-gap: 20px;
-    }
-}
+
+
+
 
 @media screen and (max-width: 480px) {
     

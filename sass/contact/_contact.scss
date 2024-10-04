@@ -1,8 +1,10 @@
 
 /* Contact Us */
 .actCityLink {
-    display: flex;
-    padding: 100px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual ancho */
+    grid-template-rows: auto auto; /* Crea 2 filas */
+    padding: 100px 50px;
 
     div{
     display: flex;

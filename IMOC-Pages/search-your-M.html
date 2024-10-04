@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-        
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,8 @@
     <!---LIBRERIA ANIMATE.CSS-->    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-     <!---LIBRERIA IMAGEHOVER.CSS----->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.css" integrity="sha512-Xxj/EBRz9HT96cFuGumHSg84Mbt1vnc8hCZslnt7jjW/E/DniMYYtt86Yx00DZ7G7G9xPOuXCSLHwG+R1LKQvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---LIBRERIA IMAGEHOVER.CSS----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.css" integrity="sha512-Xxj/EBRz9HT96cFuGumHSg84Mbt1vnc8hCZslnt7jjW/E/DniMYYtt86Yx00DZ7G7G9xPOuXCSLHwG+R1LKQvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!---LIBRERIA AWESOME-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,170 +24,179 @@
     <!-- Descarga mi estilo al final, SIEMPRE va como último llamado, es el que más peso lleva (es en cascada) -->
     <link rel="stylesheet" href="../css/IMOC_style.css">
     <title>It's Mountain o'clock!</title>
-    
 </head>
 
-
-    <body>
-        <header id="header">
-        <nav id="navBar">
-            <div class="iconInicio">
-                <a href="../index.html"><img src="../IMOC Icons/IMOC-Icons.png" alt="iconInicio"></a>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../IMOC Icons/IMOC-Icons.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                It's Mountain o'clock!
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../IMOC-Pages/search-your-M.html">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../IMOC-Pages/publish-your-M.html">
+                            <i class="fas fa-plus"></i> Publish Activity
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-user"></i> Account
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../IMOC-Pages/contact-us.html">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                </ul>
             </div>
-            
+        </div>
+    </nav>
 
-            <ul class="navBar-links">
-                <li><img class="searchIcon" src="../IMOC-Images/search.png" alt="searchIcon"></a></li>
-                <li><a href="../IMOC-Pages/search-your-M.html">Search</a></li>
-                <li><img class="plusIcon" src="../IMOC-Images/plusIcon.png" alt="plusIcon"></a></li>
-                <li><a href="../IMOC-Pages/publish-your-M.html">Publish one activity</a></li>
-                <!--Pendiente Agregar boton llamado cuenta-->
-                <li><img src="../IMOC-Images/accountIcon.png" alt="accountIcon"></li>
-            </ul>
-        </nav>
-        </header>
-        <main id="main">
-            <div class="bannerM">
-                <div class="imocTitle">
-                    <h1>SEARCH Your MOUNTIVITY!</h1>
-                    <h2>Join our community and enjoy!</h2>
-                    
-                
-                </div>
-                <div class="bannerMImage">        
-                    <img class="bannerM" src="../IMOC-Images/IMOC-Banner.png" alt="bannerPublish">
-                </div>
-            </div>       
-            
-            <section id="actPublished">
+    <main id="main">
+        <div class="bannerM">
+            <div class="imocTitle">
+                <h1>SEARCH Your MOUNTIVITY!</h1>
+                <h2>Join our community and enjoy!</h2>
+            </div>
+            <div class="bannerMImage">
+                <img class="bannerM" src="../IMOC-Images/IMOC-Banner.png" alt="bannerPublish">
+            </div>
+        </div>
 
-                <div class="container mt-5">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <!-- Card 1 -->
-                        <div class="col">
-                            <div class="card h-100 d-flex flex-row">
-                                <img src="../IMOC-Images/IMOC-Images-Search/Act1-Mountain.jpeg" class="img-fluid" alt="Imagen 1" style="width: 150px; object-fit: cover;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Aconcagua Base Camp Hiking</h5>
-                                    <p class="card-text">Este es un texto informativo para la tarjeta 1.</p>
-                                    <a href="../IMOC-Pages/join-one-M.html" class="btn btn-primary">More Info</a>
-                                </div>
+        <section id="actPublished" class="mt-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-img-container">
+                                <img src="../IMOC-Images/IMOC-Images-Search/Act1-Mountain.jpeg" class="card-img-top" alt="Imagen 1">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Aconcagua Base Camp Hiking</h5>
+                                <p class="card-text">Este es un texto informativo para la tarjeta 1.</p>
+                                <a href="../IMOC-Pages/join-one-M.html" class="btn btn-primary">More Info</a>
                             </div>
                         </div>
-
-                            
-                        <!-- Card 2 -->
+                    </div>
+        
+                    <!-- Card 2 -->
                     <div class="col">
-                        <div class="card h-100 d-flex flex-row">
-                            <img src="../IMOC-Images/IMOC-Images-Search/Act3-Cascade.jpeg" class="img-fluid" alt="Imagen 2" style="width: 150px; object-fit: cover;">
+                        <div class="card h-100">
+                            <div class="card-img-container">
+                                <img src="../IMOC-Images/IMOC-Images-Search/Act3-Cascade.jpeg" class="card-img-top" alt="Imagen 2">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Riding a bike in Marbella</h5>
                                 <p class="card-text">Este es un texto informativo para la tarjeta 2.</p>
-                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-secondary">Soon</a>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Card 3 -->
                     <div class="col">
-                        <div class="card h-100 d-flex flex-row">
-                            <img src="../IMOC-Images/IMOC-Images-Search/Act3-Hiking.jpeg" class="img-fluid" alt="Imagen 3" style="width: 150px; object-fit: cover;">
+                        <div class="card h-100">
+                            <div class="card-img-container">
+                                <img src="../IMOC-Images/IMOC-Images-Search/Act3-Hiking.jpeg" class="card-img-top" alt="Imagen 3">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Hiking Mount Everest</h5>
                                 <p class="card-text">Este es un texto informativo para la tarjeta 3.</p>
-                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-secondary">Soon</a>
                             </div>
                         </div>
                     </div>
-
+        
                     <!-- Card 4 -->
                     <div class="col">
-                        <div class="card h-100 d-flex flex-row">
-                            <img src="../IMOC-Images/IMOC-Images-Search/Act4-Lake.jpeg" class="img-fluid" alt="Imagen 4" style="width: 150px; object-fit: cover;">
+                        <div class="card h-100">
+                            <div class="card-img-container">
+                                <img src="../IMOC-Images/IMOC-Images-Search/Act4-Lake.jpeg" class="card-img-top" alt="Imagen 4">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Patagonia Trekking</h5>
                                 <p class="card-text">Este es un texto informativo para la tarjeta 4.</p>
-                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-secondary">Soon</a>
                             </div>
                         </div>
                     </div>
-
+        
                     <!-- Card 5 -->
                     <div class="col">
-                        <div class="card h-100 d-flex flex-row">
-                            <img src="../IMOC-Images/IMOC-Images-Search/Act5-Mountain2.jpeg" class="img-fluid" alt="Imagen 5" style="width: 150px; object-fit: cover;">
+                        <div class="card h-100">
+                            <div class="card-img-container">
+                                <img src="../IMOC-Images/IMOC-Images-Search/Act5-Mountain2.jpeg" class="card-img-top" alt="Imagen 5">
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Les alpes and Chamonix Trail</h5>
+                                <h5 class="card-title">Les Alpes and Chamonix Trail</h5>
                                 <p class="card-text">Este es un texto informativo para la tarjeta 5.</p>
-                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-secondary">Soon</a>
                             </div>
                         </div>
                     </div>
-
+        
                     <!-- Card 6 -->
                     <div class="col">
-                        <div class="card h-100 d-flex flex-row">
-                            <img src="../IMOC-Images/IMOC-Images-Search/Act6-Alpinism.jpeg" class="img-fluid" alt="Imagen 6" style="width: 150px; object-fit: cover;">
+                        <div class="card h-100">
+                            <div class="card-img-container">
+                                <img src="../IMOC-Images/IMOC-Images-Search/Act6-Alpinism.jpeg" class="card-img-top" alt="Imagen 6">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Discovering Ushuaia</h5>
                                 <p class="card-text">Este es un texto informativo para la tarjeta 6.</p>
-                                <a href="#" class="btn btn-primary">More Info</a>
+                                <a href="#" class="btn btn-secondary">Soon</a>
                             </div>
                         </div>
-                       
                     </div>
-                    <!-- <div class="col">
-                        <div class="card h-100 d-flex flex-row">
-                            <img src="../IMOC-Images/IMOC-Images-Search/Act6-Alpinism.jpeg" class="img-fluid" alt="Imagen 6" style="width: 150px; object-fit: cover;">
-                            <div class="card-body">
-                                <h5 class="card-title">Discovering Ushuaia</h5>
-                                <p class="card-text">Este es un texto informativo para la tarjeta 6.</p>
-                                <a href="#" class="btn btn-primary">More Info</a>
-                            </div>
-                        </div>
-                       
-                    </div> -->
                 </div>
-        
-            </section>
-
- 
-        </main>
-
-        <footer id="footer">
-            
-            <div class="footerDir">
-                <a href="../IMOC-Pages/contact-us.html">Contact us</a>
             </div>
-            
-            <div class="footerLegal">
-                <ul>    
-                    <li>Terms and conditions</li>
-                    <li>Work with us</li>
-                    <li>Privacy Policy</li>
-                    <li>Cookie Poolicy</li>
-                </ul>
-            </div>
-            
-            <div class="footerActivities">
-                <ul>
-                    <li>Discover our MOUNTAINS</li>
-                    <li>Activities</li>
-                    <li>Community</li>
-                </ul>
-            </div>
-            
+        </section>
+              
+    <footer id="footer" class="mt-5">
+        <div class="footerDir">
+            <a href="../IMOC-Pages/contact-us.html">Contact us</a>
+        </div>
 
-            <div class="footerSocial">
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            </div> 
+        <div class="footerLegal">
+            <ul>    
+                <li>Terms and conditions</li>
+                <li>Work with us</li>
+                <li>Privacy Policy</li>
+                <li>Cookie Policy</li>
+            </ul>
+        </div>
 
-        </footer>
-        <!-- Bootstrap JS y Popper.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+        <div class="footerActivities">
+            <ul>
+                <li>Discover our MOUNTAINS</li>
+                <li>Activities</li>
+                <li>Community</li>
+            </ul>
+        </div>
 
-    </body>
-</html>   
+        <div class="footerSocial">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        </div> 
+    </footer>
+
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

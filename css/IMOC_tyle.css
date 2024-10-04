@@ -1,12 +1,19 @@
-@charset "UTF-8";
-.navbar .fixed-top {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1040;
-  background-color: #007bff;
-  transition: background-color 0.3s ease;
+#navBar {
+  max-width: 1920;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar-links {
+  display: flex;
+}
+
+.iconInicio img {
+  width: 100px;
+  height: 100px;
 }
 
 #main {
@@ -14,7 +21,6 @@
   max-width: 1920px;
   height: auto;
   flex-direction: column;
-  padding-top: 1056px;
   padding-bottom: 20px;
 }
 
@@ -27,7 +33,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(216, 242, 254);
+  background-color: grey;
   padding: 20px 50px;
   margin-top: auto;
 }
@@ -126,10 +132,8 @@ body {
 
 /* Contact Us */
 .actCityLink {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual ancho */
-  grid-template-rows: auto auto; /* Crea 2 filas */
-  padding: 100px 50px;
+  display: flex;
+  padding: 100px 20px;
 }
 .actCityLink div {
   display: flex;
@@ -203,17 +207,6 @@ ul, li {
   padding-bottom: 20px;
 }
 
-.card-img-container {
-  height: 200px; /* Altura fija para las imágenes */
-  overflow: hidden; /* Oculta el desbordamiento */
-}
-
-.card-img-top {
-  width: 100%; /* Ajusta el ancho al contenedor */
-  height: 100%; /* Ajusta la altura al contenedor */
-  object-fit: cover; /* Mantiene la relación de aspecto y cubre el contenedor */
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -228,7 +221,16 @@ img {
   height: 30px;
 }
 
-/* Estilos para pantallas pequeñas (480px o menos) */
+/*Media va siempre al final 
+Respetar de menor a mayor las medidas o al reves*/
+@media screen and (max-width: 480px) {
+  #actPublished {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "act1" "act2" "act3" "act4" "act5" "act6";
+    column-gap: 20px;
+  }
+}
 @media screen and (max-width: 480px) {
   .actCityLink {
     display: flex;
@@ -266,4 +268,4 @@ img {
   margin-top: 30px;
 }
 
-/*# sourceMappingURL=IMOC_style.css.map */
+/*# sourceMappingURL=IMOC_tyle.css.map */
